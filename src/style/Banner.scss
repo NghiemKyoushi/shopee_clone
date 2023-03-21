@@ -1,0 +1,108 @@
+.container1 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-top: 120px;
+  margin-top: 0;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 0.125rem;
+  overflow: hidden;
+}
+.carousel-indicators button {
+  width: 0.5rem !important;
+  height: 0.5rem !important;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 1;
+  border: 1px solid hsla(0, 0%, 53.7%, 0.4);
+  background-color: #ee4d2d;
+}
+.carousel-control-prev-icon {
+  margin-right: 70px;
+  width: 2.1875rem;
+  height: 3.75rem;
+  background-color: rgba(0, 0, 0, 0.18);
+  border-radius: initial;
+}
+.carousel-control-next-icon {
+  margin-left: 70px;
+  width: 2.1875rem;
+  height: 3.75rem;
+  background-color: rgba(0, 0, 0, 0.18);
+  border-radius: initial;
+}
+.banner-container {
+  gap: 8px;
+  line-height: 0;
+  display: flex;
+  justify-content: space-between;
+  max-height: 235px;
+
+  &__img-left {
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 0;
+    flex: 1 0 68%;
+    &__img {
+      height: 235px;
+      opacity: 1;
+      transition: opacity 0.2s ease;
+    }
+  }
+  &__img-right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 0 0 32%;
+    &__item {
+      height: 100%;
+      background-position: bottom;
+      opacity: 1;
+      transition: opacity 0.2s ease;
+    }
+  }
+}
+
+.hot-options {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  width: 1200px;
+  margin: 10px auto 0;
+  min-height: 108px;
+  a:hover{
+    color: #222;
+    transform: translateY(-0.0625rem);
+  }
+  a {
+    text-decoration: none;
+    color: #222;
+  }
+  
+  &__img {
+    height: 100%;
+    transition: opacity 0.2s ease;
+  }
+  &__img-container {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 18px auto 8px;
+  }
+  &__container {
+    width: 150px;
+  }
+  &__title {
+    font-size: 0.8125rem;
+    line-height: 0.875rem;
+    max-width: 150px;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: pre-line;
+    text-align: center;
+  }
+}
